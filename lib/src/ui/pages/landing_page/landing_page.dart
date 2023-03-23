@@ -1,7 +1,5 @@
-import 'package:amirarabpour/src/ui/pages/landing_page/widgets/ui_ux_img.dart';
+import 'package:amirarabpour/src/ui/global/widgets/noise_background.dart';
 import 'package:flutter/material.dart';
-
-import '../../global/widgets/noise_background.dart';
 
 class LandingPage extends StatelessWidget {
   const LandingPage({Key? key}) : super(key: key);
@@ -9,13 +7,14 @@ class LandingPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final content = [
-      const SizedBox(
-        height: 246,
-      ),
-      const UIUXImage(),
+      // const SizedBox(
+      //   height: 246,
+      // ),
+      // const UIUXImage(),
     ];
 
     return Scaffold(
+      backgroundColor: Colors.transparent,
       body: NoiseBackground(
         color: Colors.grey[350]!,
         intensity: 0.85,
